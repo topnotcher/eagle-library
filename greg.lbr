@@ -5998,6 +5998,28 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </device>
 </devices>
 </deviceset>
+<deviceset name="SN74LVC2G14">
+<gates>
+<gate name="G3" symbol="POWER_CONSORT" x="7.62" y="0"/>
+<gate name="G1" symbol="GATE_INVERTER_SCHMITT_TRIGGER" x="-10.16" y="7.62"/>
+<gate name="G2" symbol="GATE_INVERTER_SCHMITT_TRIGGER" x="-10.16" y="-7.62"/>
+</gates>
+<devices>
+<device name="DBV" package="SC70-6">
+<connects>
+<connect gate="G1" pin="A" pad="1"/>
+<connect gate="G1" pin="Y" pad="6"/>
+<connect gate="G2" pin="A" pad="3"/>
+<connect gate="G2" pin="Y" pad="4"/>
+<connect gate="G3" pin="P$V+" pad="5"/>
+<connect gate="G3" pin="P$V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

@@ -5984,7 +5984,7 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <gate name="G$2" symbol="POWER_CONSORT" x="5.08" y="0"/>
 </gates>
 <devices>
-<device name="DBV" package="SC70-5">
+<device name="DCK" package="SC70-5">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="B" pad="2"/>
@@ -6005,7 +6005,7 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <gate name="G2" symbol="GATE_INVERTER_SCHMITT_TRIGGER" x="-10.16" y="-7.62"/>
 </gates>
 <devices>
-<device name="DBV" package="SC70-6">
+<device name="DCK" package="SC70-6">
 <connects>
 <connect gate="G1" pin="A" pad="1"/>
 <connect gate="G1" pin="Y" pad="6"/>

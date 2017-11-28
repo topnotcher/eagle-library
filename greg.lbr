@@ -5977,6 +5977,27 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </device>
 </devices>
 </deviceset>
+<deviceset name="SN74LVC1G32">
+<description>Single 2-Input Positive-OR Gate&lt;br/&gt;&lt;br/&gt;http://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf</description>
+<gates>
+<gate name="G$1" symbol="GATE_OR_2" x="-7.62" y="0"/>
+<gate name="G$2" symbol="POWER_CONSORT" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="DBV" package="SC70-5">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+<connect gate="G$2" pin="P$V+" pad="5"/>
+<connect gate="G$2" pin="P$V-" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

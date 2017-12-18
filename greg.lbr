@@ -6079,6 +6079,32 @@ This single 2-input postive AND gate i s designed for 1.65V to 5.5V operation.
 </devices>
 </deviceset>
 <deviceset name="SN74LV1T34">
+<description>&lt;p&gt;Single Power Supply Single Buffer GATE CMOS Logic Level Shifter&lt;/p&gt;
+&lt;p&gt;
+&lt;h1&gt;Texas Instruments SN74LV1T34&lt;/h1&gt;
+The SN74LV1T34 device is a low voltage CMOS gate
+logic that operates at a wider voltage range for
+industrial, portable, and telecom applications. The
+output level is referenced to the supply voltage and is
+able to support 1.8-V, 2.5-V, 3.3-V, and 5-V CMOS
+levels.
+&lt;/p&gt;
+&lt;p&gt;The input is designed with a lower threshold circuit to
+match 1.8 V input logic at VCC = 3.3 V and can be
+used in 1.8 V to 3.3 V level up translation. In addition,
+the 5 V tolerant input pins enable down translation
+(that is, 3.3 V to 2.5 V output at VCC = 2.5 V). The
+wide VCC range of 1.8 V to 5.5 V allows generation of
+desired output levels to connect to controllers or
+processors.&lt;/p&gt;&lt;p&gt;
+The SN74LV1T34 device is designed with currentdrive
+capability of 8 mA to reduce line reflections,
+overshoot, and undershoot caused by high-drive
+outputs.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf"&gt;SN74LV1T34 Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G1" symbol="BUFFER" x="-10.16" y="0"/>
 <gate name="P" symbol="POWER_CONSORT" x="5.08" y="0"/>

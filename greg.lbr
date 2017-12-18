@@ -6002,7 +6002,18 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </devices>
 </deviceset>
 <deviceset name="SN74LVC1G32">
-<description>Single 2-Input Positive-OR Gate&lt;br/&gt;&lt;br/&gt;http://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf</description>
+<description>&lt;p&gt;Single 2-Input Positive-OR Gate&lt;/p&gt;
+&lt;p&gt;
+&lt;h1&gt;Texas Instruments SN74LVC1G32&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Supports 1.65V - 5.5V operation&lt;/li&gt;
+&lt;li&gt;Inputs accept voltages to 5.5V&lt;/li&gt;
+&lt;li&gt;Supports down translation to V&lt;sub&gt;CC&lt;/sub&gt;&lt;/li&gt;
+&lt;li&gt;Low power consumption &amp;mdash; 10&amp;#181;A max&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf"&gt;SN74LVC1G32 Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G1" symbol="GATE_OR_2" x="-7.62" y="0"/>
 <gate name="P" symbol="POWER_CONSORT" x="5.08" y="0"/>

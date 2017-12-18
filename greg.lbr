@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4331,6 +4331,20 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;</description>
 <text x="-2.54" y="5.842" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-2.54" y="-7.62" size="1.778" layer="95" font="vector">&gt;VALUE</text>
 </symbol>
+<symbol name="GATE_NOR_2">
+<wire x1="-10.16" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94" curve="-84.999799"/>
+<pin name="B" x="-10.16" y="-2.54" length="point"/>
+<pin name="A" x="-10.16" y="2.54" length="point"/>
+<pin name="Y" x="6.35" y="0" length="short" rot="R180"/>
+<wire x1="-10.16" y1="2.54" x2="-8.636" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-8.636" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-10.16" y="5.842" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.778" layer="95" font="vector">&gt;VALUE</text>
+<circle x="3.175" y="0" radius="0.635" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAML21E" prefix="U">
@@ -5990,17 +6004,17 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <deviceset name="SN74LVC1G32">
 <description>Single 2-Input Positive-OR Gate&lt;br/&gt;&lt;br/&gt;http://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf</description>
 <gates>
-<gate name="G$1" symbol="GATE_OR_2" x="-7.62" y="0"/>
-<gate name="G$2" symbol="POWER_CONSORT" x="5.08" y="0"/>
+<gate name="G1" symbol="GATE_OR_2" x="-7.62" y="0"/>
+<gate name="P" symbol="POWER_CONSORT" x="5.08" y="0"/>
 </gates>
 <devices>
 <device name="DCK" package="SC70-5">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="B" pad="2"/>
-<connect gate="G$1" pin="Y" pad="4"/>
-<connect gate="G$2" pin="P$V+" pad="5"/>
-<connect gate="G$2" pin="P$V-" pad="3"/>
+<connect gate="G1" pin="A" pad="1"/>
+<connect gate="G1" pin="B" pad="2"/>
+<connect gate="G1" pin="Y" pad="4"/>
+<connect gate="P" pin="P$V+" pad="5"/>
+<connect gate="P" pin="P$V-" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6010,7 +6024,7 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </deviceset>
 <deviceset name="SN74LVC2G14">
 <gates>
-<gate name="G3" symbol="POWER_CONSORT" x="7.62" y="0"/>
+<gate name="P" symbol="POWER_CONSORT" x="7.62" y="0"/>
 <gate name="G1" symbol="GATE_INVERTER_SCHMITT_TRIGGER" x="-10.16" y="7.62"/>
 <gate name="G2" symbol="GATE_INVERTER_SCHMITT_TRIGGER" x="-10.16" y="-7.62"/>
 </gates>
@@ -6021,8 +6035,8 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <connect gate="G1" pin="Y" pad="6"/>
 <connect gate="G2" pin="A" pad="3"/>
 <connect gate="G2" pin="Y" pad="4"/>
-<connect gate="G3" pin="P$V+" pad="5"/>
-<connect gate="G3" pin="P$V-" pad="2"/>
+<connect gate="P" pin="P$V+" pad="5"/>
+<connect gate="P" pin="P$V-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6031,18 +6045,32 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </devices>
 </deviceset>
 <deviceset name="SN74LVC1G08">
+<description>&lt;p&gt;Single 2-input positive AND gate.&lt;/p&gt;
+&lt;p&gt;
+&lt;h1&gt;Texas Instruments SN74LVC1G08&lt;/h1&gt;
+This single 2-input postive AND gate i s designed for 1.65V to 5.5V operation.
+&lt;ul&gt;
+&lt;li&gt;Inputs accept voltages to 5.5V&lt;/li&gt;
+&lt;li&gt;Provides down translation to V&lt;sub&gt;CC&lt;/sub&gt;&lt;/li&gt;
+&lt;li&gt;Low power consumption &amp;mdash; 10&amp;#181;A max&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;off&lt;/sub&gt; supports live insertion, partial power down, and back-drive protection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"&gt;SN74LVC1G08 Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="GATE_AND_2" x="-10.16" y="0"/>
-<gate name="G$2" symbol="POWER_CONSORT" x="5.08" y="0"/>
+<gate name="G1" symbol="GATE_AND_2" x="-10.16" y="0"/>
+<gate name="P" symbol="POWER_CONSORT" x="5.08" y="0"/>
 </gates>
 <devices>
 <device name="DCK" package="SC70-5">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="B" pad="2"/>
-<connect gate="G$1" pin="Y" pad="4"/>
-<connect gate="G$2" pin="P$V+" pad="5"/>
-<connect gate="G$2" pin="P$V-" pad="3"/>
+<connect gate="G1" pin="A" pad="1"/>
+<connect gate="G1" pin="B" pad="2"/>
+<connect gate="G1" pin="Y" pad="4"/>
+<connect gate="P" pin="P$V+" pad="5"/>
+<connect gate="P" pin="P$V-" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6052,16 +6080,87 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </deviceset>
 <deviceset name="SN74LV1T34">
 <gates>
-<gate name="G$1" symbol="BUFFER" x="-10.16" y="0"/>
-<gate name="G$2" symbol="POWER_CONSORT" x="5.08" y="0"/>
+<gate name="G1" symbol="BUFFER" x="-10.16" y="0"/>
+<gate name="P" symbol="POWER_CONSORT" x="5.08" y="0"/>
 </gates>
 <devices>
 <device name="DCK" package="SC70-5">
 <connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="Y" pad="4"/>
-<connect gate="G$2" pin="P$V+" pad="5"/>
-<connect gate="G$2" pin="P$V-" pad="3"/>
+<connect gate="G1" pin="A" pad="2"/>
+<connect gate="G1" pin="Y" pad="4"/>
+<connect gate="P" pin="P$V+" pad="5"/>
+<connect gate="P" pin="P$V-" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LVC2G02">
+<description>&lt;p&gt;Dual 2-Input Positive-NOR Gate&lt;/p&gt;
+&lt;p&gt;
+&lt;h1&gt;Texas Instruments SN74LVC2G02&lt;/h1&gt;&lt;br /&gt;&lt;/br&gt;
+This dual 2-input positive-NOR gate is designed for 1.65V-5.5V V&lt;sub&gt;CC&lt;/sub&gt; operation. This device is fully specified for partial-power-down applications using I&lt;sub&gt;off&lt;/sub&gt;. The I&lt;sub&gt;off&lt;/sub&gt; circuitry disables the outputs, preventing damaging current backflow through the device when it is powered down.
+&lt;ul&gt;
+&lt;li&gt;Supports 5V V&lt;sub&gt;CC&lt;/sub&gt; operation&lt;/li&gt;
+&lt;li&gt;Inputs accept voltages to 5.5V&lt;/li&gt;
+&lt;li&gt;Low power consumption. 10&amp;#181;A max I&lt;sub&gt;CC&lt;/sub&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lvc2g02.pdf"&gt;SN74LVC2G02 Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G1" symbol="GATE_NOR_2" x="-10.16" y="7.62"/>
+<gate name="G2" symbol="GATE_NOR_2" x="-10.16" y="-10.16"/>
+<gate name="P" symbol="POWER_CONSORT" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="DCU" package="SSOP8">
+<connects>
+<connect gate="G1" pin="A" pad="1"/>
+<connect gate="G1" pin="B" pad="2"/>
+<connect gate="G1" pin="Y" pad="7"/>
+<connect gate="G2" pin="A" pad="5"/>
+<connect gate="G2" pin="B" pad="6"/>
+<connect gate="G2" pin="Y" pad="3"/>
+<connect gate="P" pin="P$V+" pad="8"/>
+<connect gate="P" pin="P$V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LVC1G02">
+<description>&lt;p&gt;Single 2-input positive NOR gate.&lt;/p&gt;
+&lt;p&gt;
+&lt;h1&gt;Texas Instruments SN74LVC1G02&lt;/h1&gt;
+This single 2-input postive NOR gate i s designed for 1.65V to 5.5V operation.
+&lt;ul&gt;
+&lt;li&gt;Inputs accept voltages to 5.5V&lt;/li&gt;
+&lt;li&gt;Provides down translation to V&lt;sub&gt;CC&lt;/sub&gt;&lt;/li&gt;
+&lt;li&gt;Low power consumption &amp;mdash; 10&amp;#181;A max&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;off&lt;/sub&gt; supports live insertion, partial power down, and back-drive protection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lvc1g02.pdf"&gt;SN74LVC1G02 Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G1" symbol="GATE_NOR_2" x="-10.16" y="0"/>
+<gate name="P" symbol="POWER_CONSORT" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="DCK" package="SC70-5">
+<connects>
+<connect gate="G1" pin="A" pad="1"/>
+<connect gate="G1" pin="B" pad="2"/>
+<connect gate="G1" pin="Y" pad="4"/>
+<connect gate="P" pin="P$V+" pad="5"/>
+<connect gate="P" pin="P$V-" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

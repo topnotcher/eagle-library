@@ -4740,40 +4740,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </device>
 </devices>
 </deviceset>
-<deviceset name="TLC5971">
-<gates>
-<gate name="G$1" symbol="TLC5971" x="-7.62" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="SSOP20">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IREF" pad="1"/>
-<connect gate="G$1" pin="OUTB0" pad="5"/>
-<connect gate="G$1" pin="OUTB1" pad="8"/>
-<connect gate="G$1" pin="OUTB2" pad="15"/>
-<connect gate="G$1" pin="OUTB3" pad="18"/>
-<connect gate="G$1" pin="OUTG0" pad="4"/>
-<connect gate="G$1" pin="OUTG1" pad="7"/>
-<connect gate="G$1" pin="OUTG2" pad="14"/>
-<connect gate="G$1" pin="OUTG3" pad="17"/>
-<connect gate="G$1" pin="OUTR0" pad="3"/>
-<connect gate="G$1" pin="OUTR1" pad="6"/>
-<connect gate="G$1" pin="OUTR2" pad="13"/>
-<connect gate="G$1" pin="OUTR3" pad="16"/>
-<connect gate="G$1" pin="SCKI" pad="10"/>
-<connect gate="G$1" pin="SCKO" pad="11"/>
-<connect gate="G$1" pin="SDTO" pad="12"/>
-<connect gate="G$1" pin="STDI" pad="9"/>
-<connect gate="G$1" pin="VCC" pad="19"/>
-<connect gate="G$1" pin="VREG" pad="20"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ATMEGA328">
 <gates>
 <gate name="G$1" symbol="MEGA328" x="0" y="0"/>

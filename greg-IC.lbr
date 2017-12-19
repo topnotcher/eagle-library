@@ -382,6 +382,20 @@
 <pin name="VCC" x="5.08" y="15.24" length="short" direction="sup" rot="R270"/>
 <pin name="GND" x="7.62" y="15.24" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="P82B96">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="SX" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SY" x="-12.7" y="-5.08" length="middle"/>
+<pin name="RX" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="TX" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="RY" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="TY" x="12.7" y="-5.08" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SN74LVC2G14">
@@ -638,6 +652,46 @@ The TLC59711 is a 12-channel constant current sink LED driver. Each output chann
 <connect gate="G$1" pin="STDI" pad="9"/>
 <connect gate="G$1" pin="VCC" pad="19"/>
 <connect gate="G$1" pin="VREG" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P82B96">
+<description>&lt;p&gt;I&lt;sup&gt;2&lt;/sup&gt;C compatible dual bidirectional bus buffer&lt;/p&gt;
+&lt;p&gt;
+&lt;h1&gt;Texas Instruments P82B96&lt;/h1&gt;
+The P82B96 device is a bus buffer that supports bidirectional data transfer between an I&lt;sup&gt;2&lt;/sup&gt;C bus and a range of other bus configurations with different voltage and current levels.
+&lt;/p&gt;
+&lt;p&gt;One of the advantages of the P82B96 is that it supports longer cables/traces and allows for more devices per I&lt;sup&gt;2&lt;/sup&gt;C bus because it can isolate bus capacitance such that the total loading of the new bus or remote I&lt;sup&gt;2&lt;/sup&gt;C nodes are not apparent to other I&lt;sup&gt;2&lt;/sup&gt;C busses or nodes. The restrictions on the number of devices in a system due to capacitance or the physical separation between them, are greatly improved.&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Operating power supply voltage range of 2V to 15V&lt;/li&gt;
+&lt;li&gt;Can interface between I&lt;sup&gt;2&lt;/sup&gt;C busses operating at different logic levels.&lt;/li&gt;
+&lt;li&gt;Longer cables by allowing bus capacitance of 400pF on the main side (Sx/Sy) and 4000pF on the transmission side (Tx/Ty).&lt;/li&gt;
+&lt;li&gt;Outputs on the transmission side (Tx/Ty) have higher current sink capability for driving low impedance or high capacitance busses.&lt;/li&gt;
+&lt;li&gt;400kHz fast I&lt;sup&gt;2&lt;/sup&gt;C bus operation over at least 20 meters of wire.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/p82b96.pdf"&gt;P82B96 Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="P82B96" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PW" package="SSOP8">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="RX" pad="2"/>
+<connect gate="G$1" pin="RY" pad="6"/>
+<connect gate="G$1" pin="SX" pad="1"/>
+<connect gate="G$1" pin="SY" pad="7"/>
+<connect gate="G$1" pin="TX" pad="3"/>
+<connect gate="G$1" pin="TY" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>

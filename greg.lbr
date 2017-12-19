@@ -5787,28 +5787,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </device>
 </devices>
 </deviceset>
-<deviceset name="P82B96">
-<gates>
-<gate name="G$1" symbol="P82B96" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SSOP8">
-<connects>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="RX" pad="2"/>
-<connect gate="G$1" pin="RY" pad="6"/>
-<connect gate="G$1" pin="SX" pad="1"/>
-<connect gate="G$1" pin="SY" pad="7"/>
-<connect gate="G$1" pin="TX" pad="3"/>
-<connect gate="G$1" pin="TY" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CLICKMATE-7">
 <gates>
 <gate name="G$1" symbol="M07" x="0" y="0"/>

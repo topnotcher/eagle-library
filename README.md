@@ -3,3 +3,18 @@ My personal Eagle library. Much more organization required.
 
 Device Index
 ------------
+
+# IC
+* **SN74LVC2G14** - Dual Schmitt-Trigger Inverter
+* **SN74LVC2G02** - Dual 2-Input Positive-NOR Gate
+* **SN74LVC1G32** - Single 2-Input Positive-OR Gate
+* **SN74LVC1G08** - Single 2-input positive AND gate.
+* **SN74LVC1G02** - Single 2-input positive NOR gate.
+* **SN74LV1T34** - Single Power Supply Single Buffer GATE CMOS Logic Level Shifter
+* **TLC59711** - 12-Channel, 16-Bit RGB LED Driver
+* **P82B96** - I2C compatible dual bidirectional bus buffer
+
+# Connector
+* **PICOCLASP-10** - 10-pin Molex Pico-Clasp headers
+* **PICOCLASP-8** - 8-pin Molex Pico-Clasp headers
+* **MINI-FIT-JR-04** - 4-pin Molex Mini-Fit Jr power connector

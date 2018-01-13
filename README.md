@@ -14,6 +14,10 @@ Device Index
 * **TLC59711** - 12-Channel, 16-Bit RGB LED Driver
 * **P82B96** - I2C compatible dual bidirectional bus buffer
 
+# MCU
+* **ATSAML21E** - Atmel SAML21E ARM Cortex-M0+ Microcontroller
+* **ATSAML21J** - Atmel SAML21J ARM Cortex-M0+ Microcontroller
+
 # Connector
 * **PICOCLASP-10** - 10-pin Molex Pico-Clasp headers
 * **PICOCLASP-8** - 8-pin Molex Pico-Clasp headers

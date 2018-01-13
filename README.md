@@ -17,6 +17,7 @@ Device Index
 # MCU
 * **ATSAML21E** - Atmel SAML21E ARM Cortex-M0+ Microcontroller
 * **ATSAML21J** - Atmel SAML21J ARM Cortex-M0+ Microcontroller
+* **ATSAMD51N** - Atmel SAMD51N ARM Cortex-M4 Microcontroller
 
 # Connector
 * **PICOCLASP-10** - 10-pin Molex Pico-Clasp headers

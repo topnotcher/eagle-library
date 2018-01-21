@@ -14,6 +14,9 @@ Device Index
 * **TLC59711** - 12-Channel, 16-Bit RGB LED Driver
 * **P82B96** - I2C compatible dual bidirectional bus buffer
 
+# Semiconductor
+* **ZENER-DIODE** - Zener Diode
+
 # MCU
 * **ATSAML21E** - Atmel SAML21E ARM Cortex-M0+ Microcontroller
 * **ATSAML21J** - Atmel SAML21J ARM Cortex-M0+ Microcontroller

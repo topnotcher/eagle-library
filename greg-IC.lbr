@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -71,7 +71,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -278,6 +278,36 @@
 <rectangle x1="-2.4529" y1="2.6416" x2="-2.0973" y2="3.937" layer="51"/>
 <rectangle x1="-3.1029" y1="2.6416" x2="-2.7473" y2="3.937" layer="51"/>
 </package>
+<package name="SOIC8">
+<wire x1="2.159" y1="1.9558" x2="-2.159" y2="1.9558" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-1.9558" x2="2.54" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.54" y1="1.5748" x2="-2.159" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.159" y1="1.9558" x2="2.54" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.54" y1="-1.5748" x2="-2.159" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.159" y1="-1.9558" x2="2.159" y2="-1.9558" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.5748" x2="2.54" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.5748" x2="-2.54" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.54" y1="-1.6002" x2="2.54" y2="-1.6002" width="0.0508" layer="21"/>
+<smd name="1" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<text x="3.937" y="-2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-2.921" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
+<rectangle x1="-2.159" y1="-3.0988" x2="-1.651" y2="-1.9558" layer="51"/>
+<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="-3.0734" x2="0.889" y2="-1.9304" layer="51"/>
+<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
+<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
+<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POWER_CONSORT">
@@ -395,6 +425,20 @@
 <pin name="TX" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="RY" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <pin name="TY" x="12.7" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MAX3490">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="Y" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Z" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="A" x="12.7" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="B" x="12.7" y="-7.62" length="middle" direction="in" rot="R180"/>
+<pin name="RO" x="-12.7" y="-7.62" length="middle" direction="out"/>
+<pin name="DI" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="GND" x="-2.54" y="15.24" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC" x="2.54" y="15.24" length="middle" direction="pwr" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -692,6 +736,42 @@ The P82B96 device is a bus buffer that supports bidirectional data transfer betw
 <connect gate="G$1" pin="TX" pad="3"/>
 <connect gate="G$1" pin="TY" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX3490E">
+<description>&lt;h1&gt;Maxim MAX3490 RS-485/RS-422 Transceiver&lt;/h1&gt;
+
+&lt;p&gt;
+Devices in the MAX3483E family (MAX3483E/MAX3485E/
+MAX3486E/MAX3488E/MAX3490E/MAX3491E) are
+±15kV ESD-protected, +3.3V, low-power transceivers for
+RS-485 and RS-422 communications. Each device contains
+one driver and one receiver. The MAX3483E and
+MAX3488E feature slew-rate-limited drivers that minimize
+EMI and reduce reflections caused by improperly terminated
+cables, allowing error-free data transmission at
+data rates up to 250kbps. The partially slew-rate-limited
+MAX3486E transmits up to 2.5Mbps. The MAX3485E,
+MAX3490E, and MAX3491E transmit at up to 12Mbps.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX3490" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SA" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="A" pad="8"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="DI" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="RO" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="Y" pad="5"/>
+<connect gate="G$1" pin="Z" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -13,6 +13,7 @@ Device Index
 * **SN74LV1T34** - Single Power Supply Single Buffer GATE CMOS Logic Level Shifter
 * **TLC59711** - 12-Channel, 16-Bit RGB LED Driver
 * **P82B96** - I2C compatible dual bidirectional bus buffer
+* **MAX3490E** - Maxim MAX3490 RS-485/RS-422 Transceiver
 
 # Semiconductor
 * **ZENER-DIODE** - Zener Diode

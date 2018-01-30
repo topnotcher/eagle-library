@@ -26,3 +26,4 @@ Device Index
 * **PICOCLASP-10** - 10-pin Molex Pico-Clasp headers
 * **PICOCLASP-8** - 8-pin Molex Pico-Clasp headers
 * **MINI-FIT-JR-04** - 4-pin Molex Mini-Fit Jr power connector
+* **NANO-FIT-04** - Molex Nano Fit Power Connector - 4 position

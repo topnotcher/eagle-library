@@ -32,3 +32,4 @@ Device Index
 * **MINI-FIT-JR-04** - 4-pin Molex Mini-Fit Jr power connector
 * **NANO-FIT-04** - Molex Nano Fit Power Connector - 4 position
 * **MICROSD-4BIT**
+* **CORTEX_DEBUG** - Cortex Debug Connector

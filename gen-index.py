@@ -50,14 +50,19 @@ def generate_library_index(library_file):
     device_sets = dom.findall('./drawing/library/devicesets/deviceset')
     for device_set in device_sets:
         name = device_set.attrib['name']
-        raw_desc = device_set.find('./description').text
 
-        # Take the first line of the description and remove any "HTML" (No, you
-        # cannot parse HTML with regex, but my descriptions are probably
-        # consistent enough that this is fine.
-        desc = re.sub('</?[^<]+>', '', raw_desc.splitlines()[0])
+        desc_elem = device_set.find('./description')
+        if desc_elem is not None:
+            raw_desc = desc_elem.text
 
-        index_lines.append('* **%s** - %s' % (name, desc))
+            # Take the first line of the description and remove any "HTML" (No, you
+            # cannot parse HTML with regex, but my descriptions are probably
+            # consistent enough that this is fine.
+            desc = re.sub('</?[^<]+>', '', raw_desc.splitlines()[0])
+
+            index_lines.append('* **%s** - %s' % (name, desc))
+        else:
+            index_lines.append('* **%s**' % (name,))
 
     return '\n'.join(index_lines)
 

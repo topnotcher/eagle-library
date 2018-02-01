@@ -4,6 +4,9 @@ My personal Eagle library. Much more organization required.
 Device Index
 ------------
 
+# Passives
+* **INDUCTOR** - Inductor
+
 # IC
 * **SN74LVC2G14** - Dual Schmitt-Trigger Inverter
 * **SN74LVC2G02** - Dual 2-Input Positive-NOR Gate

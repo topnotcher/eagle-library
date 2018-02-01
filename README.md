@@ -33,3 +33,4 @@ Device Index
 * **NANO-FIT-04** - Molex Nano Fit Power Connector - 4 position
 * **MICROSD-4BIT**
 * **CORTEX_DEBUG** - Cortex Debug Connector
+* **CORTEX_DEBUG_ETM** - Cortex Debug with ETM Trace

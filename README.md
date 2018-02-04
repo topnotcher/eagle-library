@@ -17,6 +17,7 @@ Device Index
 * **TLC59711** - 12-Channel, 16-Bit RGB LED Driver
 * **P82B96** - I2C compatible dual bidirectional bus buffer
 * **MAX3490E** - Maxim MAX3490 RS-485/RS-422 Transceiver
+* **MAX98357A** - MAX98357A - Class D I2S Amplifier
 
 # Semiconductor
 * **ZENER-DIODE** - Zener Diode

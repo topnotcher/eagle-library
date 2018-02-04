@@ -37,3 +37,5 @@ Device Index
 * **CORTEX_DEBUG_ETM** - Cortex Debug with ETM Trace
 * **SAMTEC-SFM-115-02-L-D-DS**
 * **SAMTEC-TFM-115-02-L-D-DS**
+* **SAMTEC-TFM-110-02-L-D-DS**
+* **SAMTEC-SFM-110-02-L-D-DS**

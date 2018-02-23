@@ -2722,14 +2722,12 @@
 <smd name="1" x="-8.89" y="-1.8" dx="2.5" dy="0.8" layer="1" rot="R90"/>
 <hole x="10.4775" y="0" drill="1.5"/>
 <hole x="-10.4775" y="0" drill="1.5"/>
-<hole x="12.192" y="1.905" drill="1"/>
-<hole x="12.192" y="-1.905" drill="1"/>
-<hole x="16.002" y="-1.905" drill="1"/>
-<hole x="-12.192" y="-1.905" drill="1"/>
-<hole x="-16.002" y="-1.905" drill="1"/>
-<hole x="-12.192" y="1.905" drill="1"/>
-<hole x="-14.097" y="0" drill="2"/>
-<hole x="14.097" y="0" drill="2"/>
+<pad name="P$1" x="-16.002" y="-1.905" drill="1" thermals="no"/>
+<pad name="P$2" x="-12.192" y="-1.905" drill="1" thermals="no"/>
+<pad name="P$3" x="-12.192" y="1.905" drill="1" thermals="no"/>
+<pad name="P$4" x="16.002" y="-1.905" drill="1" thermals="no"/>
+<pad name="P$5" x="12.192" y="-1.905" drill="1" thermals="no"/>
+<pad name="P$6" x="12.192" y="1.905" drill="1" thermals="no"/>
 <wire x1="-20.193" y1="9.5885" x2="20.193" y2="9.5885" width="0.127" layer="21"/>
 <wire x1="-20.193" y1="-9.5885" x2="20.193" y2="-9.5885" width="0.127" layer="21"/>
 <wire x1="-20.193" y1="-9.5885" x2="-20.193" y2="9.5885" width="0.127" layer="21"/>
@@ -2763,14 +2761,12 @@
 <smd name="1" x="-5.715" y="-1.8" dx="2.5" dy="0.8" layer="1" rot="R90"/>
 <hole x="7.3025" y="0" drill="1.5"/>
 <hole x="-7.3025" y="0" drill="1.5"/>
-<hole x="9.017" y="1.905" drill="1"/>
-<hole x="9.017" y="-1.905" drill="1"/>
-<hole x="12.827" y="-1.905" drill="1"/>
-<hole x="-9.017" y="-1.905" drill="1"/>
-<hole x="-12.827" y="-1.905" drill="1"/>
-<hole x="-9.017" y="1.905" drill="1"/>
-<hole x="-10.922" y="0" drill="2"/>
-<hole x="10.922" y="0" drill="2"/>
+<pad name="P$1" x="-12.827" y="-1.905" drill="1" thermals="no"/>
+<pad name="P$2" x="-9.017" y="-1.905" drill="1" thermals="no"/>
+<pad name="P$3" x="-9.017" y="1.905" drill="1" thermals="no"/>
+<pad name="P$4" x="12.827" y="-1.905" drill="1" thermals="no"/>
+<pad name="P$5" x="9.017" y="-1.905" drill="1" thermals="no"/>
+<pad name="P$6" x="9.017" y="1.905" drill="1" thermals="no"/>
 <wire x1="5.8928" y1="0.508" x2="5.8928" y2="2.9845" width="0.025" layer="21"/>
 <wire x1="-4.6228" y1="0.508" x2="-4.6228" y2="2.9845" width="0.025" layer="21"/>
 <wire x1="-5.5372" y1="0.508" x2="-5.5372" y2="2.9845" width="0.025" layer="21"/>

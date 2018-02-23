@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -623,6 +623,11 @@
 <smd name="13" x="1.27" y="-1.25" dx="2" dy="0.8" layer="1" rot="R90"/>
 <pad name="P$33" x="10.6045" y="0" drill="0.75"/>
 <pad name="P$34" x="-10.6045" y="0" drill="0.75"/>
+<polygon width="0.127" layer="21">
+<vertex x="-8.255" y="3.81"/>
+<vertex x="-9.525" y="2.54"/>
+<vertex x="-6.985" y="2.54"/>
+</polygon>
 </package>
 <package name="SAMTEC-TFM-115-02-L-D-DS">
 <wire x1="4.9022" y1="0.508" x2="4.9022" y2="2.9845" width="0.025" layer="21"/>
@@ -1274,6 +1279,11 @@
 <wire x1="6.5405" y1="-1.524" x2="6.5405" y2="1.524" width="0.025" layer="21"/>
 <wire x1="-4.5085" y1="2.159" x2="-4.5085" y2="1.524" width="0.025" layer="21"/>
 <wire x1="-4.5085" y1="2.159" x2="-6.0325" y2="2.159" width="0.025" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-5.08" y="3.81"/>
+<vertex x="-6.35" y="2.54"/>
+<vertex x="-3.81" y="2.54"/>
+</polygon>
 </package>
 </packages>
 <symbols>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -332,6 +332,56 @@
 <smd name="7" x="0.25" y="-2.175" dx="2.35" dy="0.28" layer="1" roundness="100" rot="R90"/>
 <smd name="6" x="-0.25" y="-2.175" dx="2.35" dy="0.28" layer="1" roundness="100" rot="R90"/>
 </package>
+<package name="SSOP20-POWERPAD">
+<wire x1="-3.25" y1="-2.6" x2="3.25" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="-2.6" x2="3.25" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="2.6" x2="-3.25" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="2.6" x2="-3.25" y2="-2.6" width="0.2032" layer="21"/>
+<circle x="-2.55" y="-1.225" radius="0.4422" width="0" layer="21"/>
+<smd name="1" x="-2.925" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="2" x="-2.275" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="3" x="-1.625" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="4" x="-0.975" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="5" x="-0.325" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="6" x="0.325" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="7" x="0.975" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="8" x="1.625" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="9" x="2.275" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="10" x="2.925" y="-3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="11" x="2.925" y="3" dx="0.4" dy="1.8" layer="1" rot="R180"/>
+<smd name="12" x="2.275" y="3" dx="0.4" dy="1.8" layer="1" rot="R180"/>
+<smd name="15" x="0.325" y="3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="16" x="-0.325" y="3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="17" x="-0.975" y="3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="18" x="-1.625" y="3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="19" x="-2.275" y="3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="20" x="-2.925" y="3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="14" x="0.975" y="3" dx="0.4" dy="1.8" layer="1"/>
+<smd name="13" x="1.625" y="3" dx="0.4" dy="1.8" layer="1"/>
+<text x="-4.076" y="-2.8799" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.24" y="-2.9799" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-3.1029" y1="-3.937" x2="-2.7473" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.4529" y1="-3.937" x2="-2.0973" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.8029" y1="-3.937" x2="-1.4473" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1529" y1="-3.937" x2="-0.7973" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5029" y1="-3.937" x2="-0.1473" y2="-2.6416" layer="51"/>
+<rectangle x1="0.1471" y1="-3.937" x2="0.5027" y2="-2.6416" layer="51"/>
+<rectangle x1="0.7973" y1="-3.937" x2="1.1529" y2="-2.6416" layer="51"/>
+<rectangle x1="1.4473" y1="-3.937" x2="1.8029" y2="-2.6416" layer="51"/>
+<rectangle x1="2.0973" y1="-3.937" x2="2.4529" y2="-2.6416" layer="51"/>
+<rectangle x1="2.7473" y1="-3.937" x2="3.1029" y2="-2.6416" layer="51"/>
+<rectangle x1="2.7473" y1="2.6416" x2="3.1029" y2="3.937" layer="51"/>
+<rectangle x1="2.0973" y1="2.6416" x2="2.4529" y2="3.937" layer="51"/>
+<rectangle x1="1.4473" y1="2.6416" x2="1.8029" y2="3.937" layer="51"/>
+<rectangle x1="0.7973" y1="2.6416" x2="1.1529" y2="3.937" layer="51"/>
+<rectangle x1="0.1471" y1="2.6416" x2="0.5027" y2="3.937" layer="51"/>
+<rectangle x1="-0.5029" y1="2.6416" x2="-0.1473" y2="3.937" layer="51"/>
+<rectangle x1="-1.1529" y1="2.6416" x2="-0.7973" y2="3.937" layer="51"/>
+<rectangle x1="-1.8029" y1="2.6416" x2="-1.4473" y2="3.937" layer="51"/>
+<rectangle x1="-2.4529" y1="2.6416" x2="-2.0973" y2="3.937" layer="51"/>
+<rectangle x1="-3.1029" y1="2.6416" x2="-2.7473" y2="3.937" layer="51"/>
+<smd name="POWERPAD" x="0" y="0" dx="3.43" dy="2.75" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POWER_CONSORT">
@@ -424,9 +474,8 @@
 <pin name="OUTR2" x="25.4" y="10.16" length="short" rot="R180"/>
 <pin name="VREG" x="10.16" y="15.24" length="short" direction="pas" rot="R270"/>
 <pin name="SCKO" x="25.4" y="-12.7" length="short" rot="R180"/>
-<pin name="IREF" x="7.62" y="-17.78" length="short" rot="R90"/>
-<text x="5.08" y="-7.62" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="11.43" y="-7.62" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="IREF" x="5.08" y="-17.78" length="short" rot="R90"/>
+<text x="0" y="15.24" size="1.778" layer="95" rot="R180">&gt;NAME</text>
 <pin name="OUTG2" x="25.4" y="7.62" length="short" rot="R180"/>
 <wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
 <pin name="OUTB2" x="25.4" y="5.08" length="short" rot="R180"/>
@@ -435,6 +484,7 @@
 <pin name="OUTB3" x="25.4" y="-5.08" length="short" rot="R180"/>
 <pin name="VCC" x="5.08" y="15.24" length="short" direction="sup" rot="R270"/>
 <pin name="GND" x="7.62" y="15.24" length="short" direction="sup" rot="R270"/>
+<pin name="POWERPAD" x="10.16" y="-17.78" length="short" rot="R90"/>
 </symbol>
 <symbol name="P82B96">
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -713,7 +763,7 @@ The TLC59711 is a 12-channel constant current sink LED driver. Each output chann
 <gate name="G$1" symbol="TLC5971" x="-7.62" y="2.54"/>
 </gates>
 <devices>
-<device name="PWP" package="SSOP20">
+<device name="SSOP20" package="SSOP20">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IREF" pad="1"/>
@@ -729,6 +779,34 @@ The TLC59711 is a 12-channel constant current sink LED driver. Each output chann
 <connect gate="G$1" pin="OUTR1" pad="6"/>
 <connect gate="G$1" pin="OUTR2" pad="13"/>
 <connect gate="G$1" pin="OUTR3" pad="16"/>
+<connect gate="G$1" pin="SCKI" pad="10"/>
+<connect gate="G$1" pin="SCKO" pad="11"/>
+<connect gate="G$1" pin="SDTO" pad="12"/>
+<connect gate="G$1" pin="STDI" pad="9"/>
+<connect gate="G$1" pin="VCC" pad="19"/>
+<connect gate="G$1" pin="VREG" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PWP" package="SSOP20-POWERPAD">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IREF" pad="1"/>
+<connect gate="G$1" pin="OUTB0" pad="5"/>
+<connect gate="G$1" pin="OUTB1" pad="8"/>
+<connect gate="G$1" pin="OUTB2" pad="15"/>
+<connect gate="G$1" pin="OUTB3" pad="18"/>
+<connect gate="G$1" pin="OUTG0" pad="4"/>
+<connect gate="G$1" pin="OUTG1" pad="7"/>
+<connect gate="G$1" pin="OUTG2" pad="14"/>
+<connect gate="G$1" pin="OUTG3" pad="17"/>
+<connect gate="G$1" pin="OUTR0" pad="3"/>
+<connect gate="G$1" pin="OUTR1" pad="6"/>
+<connect gate="G$1" pin="OUTR2" pad="13"/>
+<connect gate="G$1" pin="OUTR3" pad="16"/>
+<connect gate="G$1" pin="POWERPAD" pad="POWERPAD"/>
 <connect gate="G$1" pin="SCKI" pad="10"/>
 <connect gate="G$1" pin="SCKO" pad="11"/>
 <connect gate="G$1" pin="SDTO" pad="12"/>

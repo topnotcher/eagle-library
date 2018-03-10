@@ -3108,34 +3108,6 @@
 <pin name="(PCI8/ADC0)PC0" x="27.94" y="30.48" length="middle" rot="R180"/>
 <pin name="PC6(/RESET/PCI14)" x="-27.94" y="30.48" length="middle" function="dot"/>
 </symbol>
-<symbol name="TLC5971">
-<wire x1="-7.62" y1="-15.24" x2="22.86" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-15.24" x2="22.86" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="12.7" x2="22.86" y2="12.7" width="0.254" layer="94"/>
-<pin name="STDI" x="-10.16" y="-10.16" length="short"/>
-<pin name="SCKI" x="-10.16" y="-12.7" length="short"/>
-<pin name="SDTO" x="25.4" y="-10.16" length="short" rot="R180"/>
-<pin name="OUTR0" x="-10.16" y="10.16" length="short"/>
-<pin name="OUTG0" x="-10.16" y="7.62" length="short"/>
-<pin name="OUTB0" x="-10.16" y="5.08" length="short"/>
-<pin name="OUTR1" x="-10.16" y="0" length="short"/>
-<pin name="OUTG1" x="-10.16" y="-2.54" length="short"/>
-<pin name="OUTB1" x="-10.16" y="-5.08" length="short"/>
-<pin name="OUTR2" x="25.4" y="10.16" length="short" rot="R180"/>
-<pin name="VREG" x="10.16" y="15.24" length="short" direction="pas" rot="R270"/>
-<pin name="SCKO" x="25.4" y="-12.7" length="short" rot="R180"/>
-<pin name="IREF" x="7.62" y="-17.78" length="short" rot="R90"/>
-<text x="5.08" y="-7.62" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="11.43" y="-7.62" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="OUTG2" x="25.4" y="7.62" length="short" rot="R180"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
-<pin name="OUTB2" x="25.4" y="5.08" length="short" rot="R180"/>
-<pin name="OUTR3" x="25.4" y="0" length="short" rot="R180"/>
-<pin name="OUTG3" x="25.4" y="-2.54" length="short" rot="R180"/>
-<pin name="OUTB3" x="25.4" y="-5.08" length="short" rot="R180"/>
-<pin name="VCC" x="5.08" y="15.24" length="short" direction="sup" rot="R270"/>
-<pin name="GND" x="7.62" y="15.24" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="LED-RDB-COMMON-ANODE">
 <wire x1="6.35" y1="-3.302" x2="5.08" y2="-5.334" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.334" x2="3.81" y2="-3.302" width="0.254" layer="94"/>

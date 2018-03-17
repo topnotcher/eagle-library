@@ -965,7 +965,7 @@
 <rectangle x1="-11.1" y1="9.9" x2="-10.9" y2="10.1" layer="51" rot="R180"/>
 <rectangle x1="-13.1" y1="9.9" x2="-12.9" y2="10.1" layer="51" rot="R180"/>
 </package>
-<package name="XBEE-WIFI">
+<package name="XBEE-WIFI-PTH">
 <wire x1="-12.5" y1="-20.35" x2="12.5" y2="-20.35" width="0.127" layer="21"/>
 <wire x1="12.5" y1="-20.35" x2="12.5" y2="7" width="0.127" layer="21"/>
 <wire x1="12.5" y1="7" x2="4.5" y2="13.5" width="0.127" layer="21"/>
@@ -2882,6 +2882,43 @@
 </package>
 <package name="COIN-VIBRATOR">
 <circle x="0" y="0" radius="5.08" width="0.127" layer="21"/>
+</package>
+<package name="XBEE-WIFI-SMD">
+<wire x1="-12.5" y1="-20.35" x2="12.5" y2="-20.35" width="0.127" layer="21"/>
+<wire x1="12.5" y1="-20.35" x2="12.5" y2="7" width="0.127" layer="21"/>
+<wire x1="12.5" y1="7" x2="4.5" y2="13.5" width="0.127" layer="21"/>
+<wire x1="4.5" y1="13.5" x2="-5" y2="13.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="13.5" x2="-12.5" y2="7" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="7" x2="-12.5" y2="-20.35" width="0.127" layer="21"/>
+<text x="-3" y="-16" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-10.04" y="5.5375" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="2" x="-11.945" y="3.5309" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="3" x="-10.04" y="1.5243" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="4" x="-11.945" y="-0.4823" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="5" x="-10.04" y="-2.4889" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="6" x="-11.945" y="-4.4955" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="7" x="-10.04" y="-6.5021" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="8" x="-11.945" y="-8.5087" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="9" x="-10.04" y="-10.5153" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="10" x="-11.945" y="-12.5219" dx="2.54" dy="0.9906" layer="1"/>
+<wire x1="-12.1863" y1="6.5408" x2="-9.7987" y2="6.5408" width="0.127" layer="21"/>
+<wire x1="-9.7987" y1="6.5408" x2="-9.7987" y2="-13.5252" width="0.127" layer="21"/>
+<wire x1="-9.7987" y1="-13.5252" x2="-12.1863" y2="-13.5252" width="0.127" layer="21"/>
+<wire x1="-12.1863" y1="-13.5252" x2="-12.1863" y2="6.5408" width="0.127" layer="21"/>
+<smd name="20" x="11.96" y="5.5375" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="19" x="10.055" y="3.5309" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="18" x="11.96" y="1.5243" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="17" x="10.055" y="-0.4823" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="16" x="11.96" y="-2.4889" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="15" x="10.055" y="-4.4955" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="14" x="11.96" y="-6.5021" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="13" x="10.055" y="-8.5087" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="12" x="11.96" y="-10.5153" dx="2.54" dy="0.9906" layer="1"/>
+<smd name="11" x="10.055" y="-12.5219" dx="2.54" dy="0.9906" layer="1"/>
+<wire x1="9.8137" y1="6.5408" x2="12.2013" y2="6.5408" width="0.127" layer="21"/>
+<wire x1="12.2013" y1="6.5408" x2="12.2013" y2="-13.5252" width="0.127" layer="21"/>
+<wire x1="12.2013" y1="-13.5252" x2="9.8137" y2="-13.5252" width="0.127" layer="21"/>
+<wire x1="9.8137" y1="-13.5252" x2="9.8137" y2="6.5408" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4980,11 +5017,39 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </devices>
 </deviceset>
 <deviceset name="XBEE-WIFI">
+<description>XBEE WiFi surface mount 2mm header</description>
 <gates>
 <gate name="G$1" symbol="XBEE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="XBEE" package="XBEE-WIFI">
+<device name="PTH" package="XBEE-WIFI-PTH">
+<connects>
+<connect gate="G$1" pin="AD0/DIO0" pad="20"/>
+<connect gate="G$1" pin="AD1/DIO1" pad="19"/>
+<connect gate="G$1" pin="AD2/DIO2" pad="18"/>
+<connect gate="G$1" pin="AD3/DIO3" pad="17"/>
+<connect gate="G$1" pin="AD4/DIO4" pad="11"/>
+<connect gate="G$1" pin="ASC/AD5/DIO5" pad="15"/>
+<connect gate="G$1" pin="CTS/DIO7" pad="12"/>
+<connect gate="G$1" pin="DIN" pad="3"/>
+<connect gate="G$1" pin="DO8" pad="4"/>
+<connect gate="G$1" pin="DOUT" pad="2"/>
+<connect gate="G$1" pin="DTR/DI8" pad="9"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="ON/SLEEP" pad="13"/>
+<connect gate="G$1" pin="PWM0/RSSI" pad="6"/>
+<connect gate="G$1" pin="PWM1" pad="7"/>
+<connect gate="G$1" pin="RESERVED" pad="8"/>
+<connect gate="G$1" pin="RESET" pad="5"/>
+<connect gate="G$1" pin="RTS/AD6/DIO6" pad="16"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="VREF" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-SOCKET" package="XBEE-WIFI-SMD">
 <connects>
 <connect gate="G$1" pin="AD0/DIO0" pad="20"/>
 <connect gate="G$1" pin="AD1/DIO1" pad="19"/>

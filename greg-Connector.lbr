@@ -1494,6 +1494,8 @@
 <rectangle x1="-9.925" y1="0" x2="9.925" y2="1.3" layer="42"/>
 <rectangle x1="9.5" y1="1.5" x2="9.925" y2="2.5" layer="42"/>
 <rectangle x1="-9.925" y1="1.5" x2="-9.5" y2="2.5" layer="42"/>
+<rectangle x1="1.75" y1="0.3" x2="3.48" y2="4.6" layer="41"/>
+<rectangle x1="1.75" y1="0.3" x2="3.48" y2="4.6" layer="42"/>
 </package>
 </packages>
 <symbols>

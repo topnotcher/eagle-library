@@ -4,6 +4,10 @@ My personal Eagle library. Much more organization required.
 Device Index
 ------------
 
+# Misc
+* **CONNECTION**
+* **TEST-POINT**
+
 # Passives
 * **INDUCTOR** - Inductor
 
@@ -21,6 +25,15 @@ Device Index
 * **P82B96** - I2C compatible dual bidirectional bus buffer
 * **MAX3490E** - Maxim MAX3490 RS-485/RS-422 Transceiver
 * **MAX98357A** - MAX98357A - Class D I2S Amplifier
+* **LMZ23605**
+* **TPS62135** - 3-V to 17-V 4-A Step-Down Converter
+* **LP3855** - LP385x 1.5-A Fast Response Ultra-Low Dropout Linear Regulators
+* **TPS82085** - TPS82085 3A Step-Down Converter
+* **TPS82130** - TPS82130 3A Step-Down Converter
+* **TPS82140** - TPS82140 2A Step-Down Converter
+* **TPS82150** - TPS82150 1A Step-Down Converter
+* **LMZ21700** - LMZ21700 650mA Step-Down Converter
+* **LMZ21701** - LMZ21701 1A Step-Down Converter
 
 # Semiconductor
 * **ZENER-DIODE** - Zener Diode
@@ -42,3 +55,9 @@ Device Index
 * **SAMTEC-TFM-115-02-L-D-DS**
 * **SAMTEC-TFM-110-02-L-D-DS**
 * **SAMTEC-SFM-110-02-L-D-DS**
+* **JACK-T568-A**
+* **M.2-CARD-EDGE-E** - M.2 Card Edge Connector, Key E.
+* **2199230-4** - CONNECTOR, BACKPLANE, HOUSING, RCPT, 67POS, 2ROW; Connector Type: Card Edge; Seri
+* **BANANA-JACK**
+* **IDC-30** - https://www.digikey.com/product-detail/en/3m/N2530-6V0C-RB-WF/MSH30KTR-ND/1125440
+* **MINI-FIT-JR-03**

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1668,6 +1668,22 @@
 <pad name="7" x="13.21" y="0" drill="1.15"/>
 <pad name="8" x="16.51" y="0" drill="1.15"/>
 </package>
+<package name="TE-5520260-4">
+<hole x="5.715" y="0" drill="3.33"/>
+<hole x="-5.715" y="0" drill="3.33"/>
+<pad name="1" x="-4.445" y="6.53" drill="0.97"/>
+<pad name="3" x="-1.905" y="6.53" drill="0.97"/>
+<pad name="5" x="0.635" y="6.53" drill="0.97"/>
+<pad name="7" x="3.175" y="6.53" drill="0.97"/>
+<pad name="2" x="-3.175" y="9.07" drill="0.97"/>
+<pad name="4" x="-0.635" y="9.07" drill="0.97"/>
+<pad name="6" x="1.905" y="9.07" drill="0.97"/>
+<pad name="8" x="4.445" y="9.07" drill="0.97"/>
+<wire x1="-7.94" y1="-6.61" x2="7.94" y2="-6.61" width="0.127" layer="21"/>
+<wire x1="-7.94" y1="10.03" x2="7.94" y2="10.03" width="0.127" layer="21"/>
+<wire x1="-7.94" y1="10.03" x2="-7.94" y2="-6.61" width="0.127" layer="21"/>
+<wire x1="7.94" y1="10.03" x2="7.94" y2="-6.61" width="0.127" layer="21"/>
+</package>
 <package name="PICOCLASP-5-RA">
 <wire x1="-3.5" y1="-2.68" x2="3.5" y2="-2.68" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="2.68" x2="3.5" y2="2.68" width="0.127" layer="21"/>
@@ -2537,12 +2553,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="JACK-T568-A">
+<deviceset name="JACK-T568A-SHIELDED">
 <gates>
 <gate name="G$1" symbol="JACK-T568-A" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="TE-2301994-4">
+<device name="RA" package="TE-2301994-4">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2889,7 +2905,26 @@ https://www.digikey.com/product-detail/en/3m/M3AAA-3006R/M3AAA-3006R-ND/230673</
 </device>
 </devices>
 </deviceset>
-<deviceset name="PUNCHDOWN-T568A">
+<deviceset name="PICOCLASP-5">
+<gates>
+<gate name="G$1" symbol="M05" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RA" package="PICOCLASP-5-RA">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JACK-T568A">
 <gates>
 <gate name="G$1" symbol="PUNCHDOWN-T568-A" x="-5.08" y="2.54"/>
 </gates>
@@ -2909,20 +2944,16 @@ https://www.digikey.com/product-detail/en/3m/M3AAA-3006R/M3AAA-3006R-ND/230673</
 <technology name=""/>
 </technologies>
 </device>
-</devices>
-</deviceset>
-<deviceset name="PICOCLASP-5">
-<gates>
-<gate name="G$1" symbol="M05" x="0" y="0"/>
-</gates>
-<devices>
-<device name="RA" package="PICOCLASP-5-RA">
+<device name="VERT-JACK" package="TE-5520260-4">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>

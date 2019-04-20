@@ -34,6 +34,7 @@ Device Index
 * **TPS82150** - TPS82150 1A Step-Down Converter
 * **LMZ21700** - LMZ21700 650mA Step-Down Converter
 * **LMZ21701** - LMZ21701 1A Step-Down Converter
+* **LED1642GW**
 
 # Semiconductor
 * **ZENER-DIODE** - Zener Diode
@@ -55,9 +56,11 @@ Device Index
 * **SAMTEC-TFM-115-02-L-D-DS**
 * **SAMTEC-TFM-110-02-L-D-DS**
 * **SAMTEC-SFM-110-02-L-D-DS**
-* **JACK-T568-A**
+* **JACK-T568A-SHIELDED**
 * **M.2-CARD-EDGE-E** - M.2 Card Edge Connector, Key E.
 * **2199230-4** - CONNECTOR, BACKPLANE, HOUSING, RCPT, 67POS, 2ROW; Connector Type: Card Edge; Seri
 * **BANANA-JACK**
 * **IDC-30** - https://www.digikey.com/product-detail/en/3m/N2530-6V0C-RB-WF/MSH30KTR-ND/1125440
 * **MINI-FIT-JR-03**
+* **PICOCLASP-5**
+* **JACK-T568A**

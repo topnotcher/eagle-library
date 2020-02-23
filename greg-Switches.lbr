@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.1">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -92,6 +92,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -163,6 +165,35 @@
 <smd name="2" x="-1.95" y="-1.25" dx="1.3" dy="1" layer="1"/>
 <smd name="C" x="1.95" y="0" dx="1.3" dy="1" layer="1"/>
 </package>
+<package name="AS11AH">
+<wire x1="-4.9" y1="4.95" x2="-4.9" y2="-4.95" width="0.127" layer="21"/>
+<wire x1="4.9" y1="4.95" x2="4.9" y2="-4.95" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-4.95" x2="-1.2" y2="-4.95" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-4.95" x2="1.2" y2="-4.95" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-4.95" x2="4.9" y2="-4.95" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-4.95" x2="-1.2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-4.95" x2="1.2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-6.2" x2="1.2" y2="-6.2" width="0.127" layer="21"/>
+<pad name="3" x="-2.54" y="-0.13" drill="0.9"/>
+<pad name="4" x="2.54" y="-0.13" drill="0.9"/>
+<pad name="1" x="-2.54" y="4.95" drill="0.9"/>
+<pad name="2" x="2.54" y="4.95" drill="0.9"/>
+<wire x1="-4" y1="4.95" x2="-4" y2="6" width="0.127" layer="21"/>
+<wire x1="-4" y1="6" x2="4" y2="6" width="0.127" layer="21"/>
+<wire x1="4" y1="6" x2="4" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="4.95" x2="-4" y2="4.95" width="0.127" layer="21"/>
+<wire x1="4" y1="4.95" x2="4.9" y2="4.95" width="0.127" layer="21"/>
+</package>
+<package name="CTS_204_01">
+<wire x1="-3.55" y1="4.825" x2="-3.55" y2="-4.825" width="0.127" layer="21"/>
+<wire x1="3.55" y1="4.825" x2="3.55" y2="-4.825" width="0.127" layer="21"/>
+<wire x1="-3.55" y1="4.825" x2="3.55" y2="4.825" width="0.127" layer="21"/>
+<wire x1="-3.55" y1="-4.825" x2="3.55" y2="-4.825" width="0.127" layer="21"/>
+<smd name="1" x="-1.27" y="-5.1425" dx="3.175" dy="1.78" layer="1" rot="R90"/>
+<smd name="2" x="1.27" y="-5.1425" dx="3.175" dy="1.78" layer="1" rot="R90"/>
+<smd name="4" x="-1.27" y="5.1425" dx="3.175" dy="1.78" layer="1" rot="R90"/>
+<smd name="3" x="1.27" y="5.1425" dx="3.175" dy="1.78" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SW_SPDT">
@@ -181,19 +212,63 @@
 <pin name="1" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="-1.27" y1="-1.778" x2="-1.27" y2="2.032" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="SPST-AS11AH">
+<wire x1="-5.08" y1="2.54" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<circle x="2.54" y="7.62" radius="0.635" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.635" width="0.254" layer="94"/>
+<pin name="1" x="-10.16" y="2.54" length="point" rot="R180"/>
+<pin name="2" x="10.16" y="2.54" length="point"/>
+<wire x1="-5.08" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<pin name="3" x="0" y="0" length="point"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="TDD01-JUMPER-SWITCH">
-<description>SPDT Jumper Switch (Single DIP)</description>
+<deviceset name="SPDT" prefix="S">
+<description>SPDT Jumper Switch (Single DIP)
+
+&lt;ul&gt;
+&lt;li&gt;TDD01: &lt;a href="https://www.mouser.com/ProductDetail/CK/TDD01H0SB1R?qs=
+%2Fha2pyFadugtUIxED3N9YVB4wUO5yC9S%2FxrkBp1CzCA%3D"&gt;C&amp;amp;K TDD01&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DIP: &lt;a href="https://www.mouser.com/ProductDetail/Grayhill/78HJ01GWT?qs=sGAEpiMZZMv%2F%252B2JhlA6ysJGznUGmjyNwiFgEwk3AxqY%3D"&gt;Grayhill 78HJ01GWT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="SW_SPDT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TDD01-JUMPER-SWITCH">
+<device name="TDD01" package="TDD01-JUMPER-SWITCH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DIP" package="CTS_204_01">
+<connects>
+<connect gate="G$1" pin="1" pad="2"/>
+<connect gate="G$1" pin="2" pad="1"/>
+<connect gate="G$1" pin="C" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AS11AH" prefix="S">
+<gates>
+<gate name="G$1" symbol="SPST-AS11AH" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="AS11AH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3 4"/>
 </connects>
 <technologies>
 <technology name=""/>

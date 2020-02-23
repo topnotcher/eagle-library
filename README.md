@@ -10,9 +10,11 @@ Device Index
 
 # Passives
 * **INDUCTOR** - Inductor
+* **FERRITE_BEAD**
 
 # Switches
-* **TDD01-JUMPER-SWITCH** - SPDT Jumper Switch (Single DIP)
+* **SPDT** - SPDT Jumper Switch (Single DIP)
+* **AS11AH**
 
 # IC
 * **SN74LVC2G14** - Dual Schmitt-Trigger Inverter
@@ -35,6 +37,9 @@ Device Index
 * **LMZ21700** - LMZ21700 650mA Step-Down Converter
 * **LMZ21701** - LMZ21701 1A Step-Down Converter
 * **LED1642GW**
+* **MAX3491E** - Maxim MAX3491 RS-485/RS-422 Transceiver
+* **TPS2114A** - Autoswitching Power MUX
+* **EEPROM** - Microchip 24CW16X/24CW32X/24CW64X/24CW128X
 
 # Semiconductor
 * **ZENER-DIODE** - Zener Diode
@@ -64,3 +69,6 @@ Device Index
 * **MINI-FIT-JR-03**
 * **PICOCLASP-5**
 * **JACK-T568A**
+* **CLICKMATE-8**
+* **NANO-FIT-02**
+* **2.1MMJACK** - 2.1mm x 5.5mm THM DC jack with internal switch. Digikey part #PJ-102A, 4UCON part #05537 

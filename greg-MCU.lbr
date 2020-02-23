@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -848,7 +848,7 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATSAML21J">
+<deviceset name="ATSAML21J" prefix="U">
 <description>&lt;h1&gt;Atmel SAML21J ARM Cortex-M0+ Microcontroller&lt;/h1&gt;
 
 &lt;p&gt;The Atmel ® | SMART ™ SAM L21 is a series of low-power microcontrollers using the 32-bit
@@ -931,7 +931,7 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATSAMD51N">
+<deviceset name="ATSAMD51N" prefix="U">
 <description>&lt;h1&gt;Atmel SAMD51N ARM Cortex-M4 Microcontroller&lt;/h1&gt;
 &lt;p&gt;The SAM D51  high performance micro-controller series  is targeted for general purpose applications  using the 32-bit ARM® Cortex®-M4 processor with Floating Point Unit (FPU), running up to 120 MHz, up to 1 MB Dual Panel Flash with ECC, and up to 256 KB of SRAM with ECC .&lt;/p&gt;</description>
 <gates>

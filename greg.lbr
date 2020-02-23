@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4580,25 +4580,25 @@ XBEE WiFi surface mount package (castellated)
 <circle x="3.175" y="0" radius="0.635" width="0.254" layer="94"/>
 </symbol>
 <symbol name="GF-CHG-SOCKET-V2">
-<wire x1="-15.24" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
 <pin name="VBATT" x="-20.32" y="0" length="middle" direction="sup"/>
 <pin name="GNDBATT" x="-20.32" y="-2.54" length="middle" direction="sup"/>
 <pin name="VSYS" x="20.32" y="-5.08" length="middle" direction="sup" rot="R180"/>
 <pin name="GNDSYS" x="20.32" y="-2.54" length="middle" direction="sup" rot="R180"/>
 <pin name="VEXT" x="-20.32" y="-5.08" length="middle" direction="sup"/>
 <pin name="GNDEXT" x="-20.32" y="-7.62" length="middle" direction="sup"/>
-<pin name="VIO" x="-5.08" y="15.24" length="middle" direction="sup" rot="R270"/>
-<pin name="GNDIO" x="-2.54" y="15.24" length="middle" direction="sup" rot="R270"/>
-<pin name="SCL" x="2.54" y="15.24" length="middle" rot="R270"/>
-<pin name="SDA" x="5.08" y="15.24" length="middle" rot="R270"/>
-<pin name="GP0" x="7.62" y="15.24" length="middle" rot="R270"/>
-<pin name="GP1" x="10.16" y="15.24" length="middle" rot="R270"/>
-<pin name="GP2" x="12.7" y="15.24" length="middle" rot="R270"/>
-<pin name="TS1" x="-20.32" y="7.62" length="middle"/>
-<pin name="TS2" x="-20.32" y="5.08" length="middle"/>
+<pin name="VIO" x="20.32" y="-7.62" length="middle" direction="sup" rot="R180"/>
+<pin name="PACK-GP2" x="-20.32" y="5.08" length="middle" direction="sup"/>
+<pin name="SCL" x="2.54" y="17.78" length="middle" rot="R270"/>
+<pin name="SDA" x="5.08" y="17.78" length="middle" rot="R270"/>
+<pin name="GP0" x="7.62" y="17.78" length="middle" rot="R270"/>
+<pin name="GP1" x="10.16" y="17.78" length="middle" rot="R270"/>
+<pin name="GP2" x="12.7" y="17.78" length="middle" rot="R270"/>
+<pin name="PACK-GP0" x="-20.32" y="10.16" length="middle"/>
+<pin name="PACK-GP1" x="-20.32" y="7.62" length="middle"/>
 </symbol>
 <symbol name="M20">
 <wire x1="-7.62" y1="15.24" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
@@ -5074,7 +5074,7 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </device>
 </devices>
 </deviceset>
-<deviceset name="XBEE-WIFI">
+<deviceset name="XBEE-WIFI" prefix="J">
 <description>XBEE WiFi</description>
 <gates>
 <gate name="G$1" symbol="XBEE" x="0" y="0"/>
@@ -5767,7 +5767,7 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </device>
 </devices>
 </deviceset>
-<deviceset name="AS11AH">
+<deviceset name="AS11AH" prefix="S">
 <gates>
 <gate name="G$1" symbol="SPST-AS11AH" x="0" y="-2.54"/>
 </gates>
@@ -6015,7 +6015,7 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </device>
 </devices>
 </deviceset>
-<deviceset name="GF-CHG-SOCKET-V2">
+<deviceset name="GF-CHG-SOCKET-V2" prefix="J">
 <gates>
 <gate name="G$1" symbol="GF-CHG-SOCKET-V2" x="0" y="0"/>
 </gates>
@@ -6023,19 +6023,19 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <device name="" package="GF-CHARGER-V2">
 <connects>
 <connect gate="G$1" pin="GNDBATT" pad="27 28 29 30"/>
-<connect gate="G$1" pin="GNDEXT" pad="6 8 10 12"/>
-<connect gate="G$1" pin="GNDIO" pad="18"/>
-<connect gate="G$1" pin="GNDSYS" pad="7 9 11 13"/>
-<connect gate="G$1" pin="GP0" pad="22"/>
-<connect gate="G$1" pin="GP1" pad="24"/>
-<connect gate="G$1" pin="GP2" pad="26"/>
-<connect gate="G$1" pin="SCL" pad="14"/>
-<connect gate="G$1" pin="SDA" pad="16"/>
-<connect gate="G$1" pin="TS1" pad="2"/>
-<connect gate="G$1" pin="TS2" pad="4"/>
+<connect gate="G$1" pin="GNDEXT" pad="1 3 5 7" route="any"/>
+<connect gate="G$1" pin="GNDSYS" pad="9 10 11 13"/>
+<connect gate="G$1" pin="GP0" pad="12"/>
+<connect gate="G$1" pin="GP1" pad="14"/>
+<connect gate="G$1" pin="GP2" pad="16"/>
+<connect gate="G$1" pin="PACK-GP0" pad="22"/>
+<connect gate="G$1" pin="PACK-GP1" pad="24"/>
+<connect gate="G$1" pin="PACK-GP2" pad="26"/>
+<connect gate="G$1" pin="SCL" pad="18"/>
+<connect gate="G$1" pin="SDA" pad="20"/>
 <connect gate="G$1" pin="VBATT" pad="21 23 25"/>
-<connect gate="G$1" pin="VEXT" pad="1 3 5"/>
-<connect gate="G$1" pin="VIO" pad="20"/>
+<connect gate="G$1" pin="VEXT" pad="2 4 6"/>
+<connect gate="G$1" pin="VIO" pad="8"/>
 <connect gate="G$1" pin="VSYS" pad="15 17 19"/>
 </connects>
 <technologies>
@@ -6044,7 +6044,7 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </device>
 </devices>
 </deviceset>
-<deviceset name="G4-I2S-AMP-V1-SOCKET">
+<deviceset name="G4-I2S-AMP-V1-SOCKET" prefix="J">
 <gates>
 <gate name="G$1" symbol="M20" x="0" y="0"/>
 </gates>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -167,8 +167,8 @@
 <smd name="P$2" x="1.5" y="0" dx="3.18" dy="1.27" layer="1" rot="R90"/>
 </package>
 <package name="INDUCTOR_4X4">
-<smd name="P$1" x="-2.37" y="0" dx="3.4" dy="0.98" layer="1" rot="R90"/>
-<smd name="P$2" x="2.37" y="0" dx="3.4" dy="0.98" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.395" y="0" dx="3.4" dy="1.4" layer="1" rot="R90"/>
+<smd name="P$2" x="1.395" y="0" dx="3.4" dy="1.4" layer="1" rot="R90"/>
 <wire x1="-2" y1="2" x2="-2" y2="-2" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2" x2="2" y2="-2" width="0.127" layer="21"/>
 <wire x1="2" y1="-2" x2="2" y2="2" width="0.127" layer="21"/>
@@ -203,6 +203,14 @@
 <wire x1="1.5" y1="0.8" x2="1.5" y2="-0.8" width="0.0508" layer="39"/>
 <wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
 <wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
+</package>
+<package name="FB-FAIRRITE-3612">
+<wire x1="-4.8" y1="1.53" x2="-4.8" y2="-1.53" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-1.53" x2="4.8" y2="-1.53" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-1.53" x2="4.8" y2="1.53" width="0.127" layer="21"/>
+<wire x1="4.8" y1="1.53" x2="-4.8" y2="1.53" width="0.127" layer="21"/>
+<smd name="1" x="-3.75" y="0" dx="3" dy="1.8" layer="1"/>
+<smd name="2" x="3.75" y="0" dx="3" dy="1.8" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -275,6 +283,15 @@
 </gates>
 <devices>
 <device name="1206" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3612" package="FB-FAIRRITE-3612">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

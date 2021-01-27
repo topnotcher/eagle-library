@@ -40,6 +40,13 @@ Device Index
 * **MAX3491E** - Maxim MAX3491 RS-485/RS-422 Transceiver
 * **TPS2114A** - Autoswitching Power MUX
 * **EEPROM** - Microchip 24CW16X/24CW32X/24CW64X/24CW128X
+* **10UF** - 10.0µF ceramic capacitors
+* **SN74AUP1T86** - Single 2-Input XOR Gate
+* **PTN78060**
+* **BRIDGE-RECTIFIER**
+* **AL5802** - AL5082 - Adjustable Current Sink LED Driver
+* **MINI-TOPLED**
+* **4053** - Triple 2-channel ANALOG MULTIPLEXER
 
 # Semiconductor
 * **ZENER-DIODE** - Zener Diode
@@ -72,3 +79,6 @@ Device Index
 * **CLICKMATE-8**
 * **NANO-FIT-02**
 * **2.1MMJACK** - 2.1mm x 5.5mm THM DC jack with internal switch. Digikey part #PJ-102A, 4UCON part #05537 
+* **MINI-FIT-JR-02**
+* **PICOCLASP-2**
+* **CLIKMATE-2**
